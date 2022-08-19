@@ -55,3 +55,13 @@ The loop repeats!
 * **Rewards**: NO. You learn for your skills and knowledge
 * **Punishments**: NO. You learn for your skills and knowledge
 
+
+### Materials ###
+- [Lean Analytics - Readings and code samples](https://publish.obsidian.md/danghuynhmaianh/00-Work/Lean-Analytics/Tutorials/5-Analytics+Frameworks) - Pass: `danghuynhmaianh`
+- If you are not familiar with Python, please take these (by orders):
+    - [Kaggle Python](https://www.kaggle.com/learn/python)
+    - [Kaggle Pandas tutorial](https://www.kaggle.com/learn/pandas)
+    - [Kaggle Pandas Data cleaning tutorial](https://www.kaggle.com/learn/data-cleaning)
+    - [Kaggle Seaborn Data Viz tutorial](https://www.kaggle.com/learn/data-visualization)
+- If you are not confident with your Python, practice make perfect. This is an amazing place: [Exercism.org](https://exercism.org/tracks/python)
+
