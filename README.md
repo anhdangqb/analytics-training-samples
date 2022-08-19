@@ -2,7 +2,7 @@
 
 This is the content of tutorials and notebooks/code samples for analytics-training-hub:
 
-1. `2022-09-02`: [Session 1: Lean Analytics - BigQuery & notebooks](./bigquery-notebooks/README.md)
+- [Session 1: Lean Analytics - BigQuery & notebooks](./bigquery-notebooks/README.md): `2022-09-02`
 
 ### Git ###
 

@@ -48,3 +48,12 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Credentials
+credentials/*
+
+# Keep all .gitkeep files
+!.gitkeep
+
+# Checkpoints
+.ipynb_checkpoints/
+.virtual_documents/
