@@ -44,6 +44,7 @@ pip install -r requirements.txt
     * You can ask any other questions related to DS, industry, etc.
 
 > The idea is after completing the assignment, you have known anything you need to know about the topics.
+
 * After 2-week, we will have a training session (which has nothing new). We use the session to reinforce what you have learnt through the assignment, retrospectives about different approaches
 * After training session, you could come and polish the assignment 
 
