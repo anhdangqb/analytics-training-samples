@@ -3,6 +3,7 @@
 ## Assignments
 
 - [bigquery-colab.ipynb](./biquery-colab.ipynb)
+- [bigquery-ingest-data.ipynb](./bigquery-ingest-data.ipynb)
 
 ## Discussions ##
 > This is sharing. You DO NOT need to prepare anything in advance. Just share the current way you work.
