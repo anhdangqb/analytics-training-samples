@@ -8,6 +8,20 @@ This is the content of tutorials and notebooks/code samples for analytics-traini
 
 1. Fork this repository to your personal Bitbucket workspace ("Fork" = producing a personal copy of someone else's project) 
 2. Work and colab with Git. See: [Git-CLI Cheatsheets](./cheatsheets/git-cli.md)
+3. Pull/push from upstream repo (Forked)
+```
+cd LOCAL_REPO
+git remote add upstream https://maianhdang@bitbucket.org/maianhdang/analytics-training-samples.git
+git fetch upstream
+```
+then: (like "git pull" which is fetch + merge)
+```
+git merge upstream/master master
+```
+or, better, replay your local work on top of the fetched branch, like a "git pull --rebase"
+```
+git rebase upstream/master
+```
 
 
 ### How do I get set up? ###
