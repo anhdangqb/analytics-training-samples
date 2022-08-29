@@ -1,0 +1,65 @@
+----------------TABLE: full_201510----------------
+id_cnt                            18778427
+id_dist_cnt                       10379010
+row_cnt                           18778427
+min_time         2006-10-09 18:21:51+00:00
+max_time         2015-10-13 08:44:34+00:00
+dead_cnt                            493886
+url_cnt                            1846185
+ranking_cnt                        8399638
+time_cnt                          10353068
+descendants_cnt                    1743034
+title_cnt                          1849180
+parent_cnt                         8410926
+text_cnt                           9615420
+type_cnt                          18778427
+score_cnt                          1859512
+deleted_cnt                         321385
+-------------------TABLE: full--------------------
+id_cnt                            32626899
+id_dist_cnt                       32626899
+row_cnt                           32626899
+min_time         2006-10-09 18:21:51+00:00
+max_time         2022-08-28 09:12:23+00:00
+dead_cnt                           1394088
+timestamp_cnt                     32600081
+url_cnt                            4088666
+ranking_cnt                              0
+time_cnt                          32600081
+descendants_cnt                    3772677
+title_cnt                          4356554
+parent_cnt                        27988450
+text_cnt                          27558026
+type_cnt                          32626899
+score_cnt                          4421762
+deleted_cnt                         940040
+-----------------TABLE: comments------------------
+id_cnt                         8399417
+id_dist_cnt                    8399417
+row_cnt                        8399417
+min_time     2006-10-09 19:51:01+00:00
+max_time     2015-10-13 08:44:02+00:00
+dead_cnt                         99356
+ranking_cnt                    8399417
+time_cnt                       8399417
+time_ts_cnt                    8399417
+parent_cnt                     8399417
+text_cnt                       8171677
+deleted_cnt                     227736
+author_cnt                     8171681
+------------------TABLE: stories------------------
+id_cnt                             1959809
+id_dist_cnt                        1959809
+row_cnt                            1959809
+min_time         2006-10-09 18:21:51+00:00
+max_time         2015-10-13 08:44:34+00:00
+dead_cnt                            394344
+url_cnt                            1839757
+time_ts_cnt                        1934088
+time_cnt                           1934088
+descendants_cnt                    1741598
+title_cnt                          1841267
+deleted_cnt                          92818
+text_cnt                           1425167
+score_cnt                          1841269
+author_cnt                         1841269

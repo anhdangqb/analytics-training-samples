@@ -1,6 +1,5 @@
-google-cloud==0.34.0
-google-cloud-biquery==3.3.2
-ipykernel==6.15.1
-pandas==1.4.3
-db-dtypes==1.0.3
-duckdb==0.4.0
+google-cloud-bigquery
+pandas
+db-dtypes
+duckdb
+missingno
