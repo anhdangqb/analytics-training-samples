@@ -7,7 +7,7 @@ This is the content of tutorials and notebooks/code samples for analytics-traini
 ### Git ###
 
 1. Fork this repository to your personal Bitbucket workspace ("Fork" = producing a personal copy of someone else's project) 
-2. Work and colab with Git. See: [Git-CLI Cheatsheets]('./cheatsheets/git-cli.md)
+2. Work and colab with Git. See: [Git-CLI Cheatsheets](./cheatsheets/git-cli.md)
 
 
 ### How do I get set up? ###
@@ -17,7 +17,7 @@ This is the content of tutorials and notebooks/code samples for analytics-traini
 3. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 4. Make sure you have the [GCP service account](https://cloud.google.com/iam/docs/service-accounts) **credential json key** to programmatically access BigQuery (Ask your Admin). Put it on `credentials/`
 
-3. Create Conda environments. See: [Conda-CLI Cheatsheets]('./cheatsheets/conda-cli.md)
+3. Create Conda environments. See: [Conda-CLI Cheatsheets](./cheatsheets/conda-cli.md)
 
 ```
 conda create python=3.8 --name analytics-training-samples
