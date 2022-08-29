@@ -12,15 +12,15 @@ This is the content of tutorials and notebooks/code samples for analytics-traini
 ```
 cd LOCAL_REPO
 git remote add upstream https://maianhdang@bitbucket.org/maianhdang/analytics-training-samples.git
-git fetch upstream
 ```
 then: (like "git pull" which is fetch + merge)
 ```
-git merge upstream/master master
+git fetch upstream
+git merge upstream/main main
 ```
 or, better, replay your local work on top of the fetched branch, like a "git pull --rebase"
 ```
-git rebase upstream/master
+git rebase upstream/main
 ```
 
 

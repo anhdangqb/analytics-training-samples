@@ -1,5 +1,5 @@
-google-cloud-bigquery
-pandas
-db-dtypes
-duckdb
-missingno
+google-cloud-bigquery==3.3.2
+pandas==1.4.3
+db-dtypes==1.0.3
+duckdb==0.4.0
+missingno==0.5.1
