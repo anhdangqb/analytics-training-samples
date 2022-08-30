@@ -128,8 +128,104 @@ Let's open `stories-sample.csv` and check! You will notice that it only have few
 
 ![git-mistake](./images/git-mistake.png)
 
+### 3 - Checkout data version before deleting
+
 We want to revert to commit with tag `data.v.1.0.1`, Commit ID `d508e80`.
 
-### 3 - Checkout other data version
+```
+git checkout data.v.1.0.1 dvc-data/stories-sample.csv.dvc
+```
+Or
+```
+git checkout d508e80 dvc-data/stories-sample.csv.dvc
+```
+It will inform: `Update 1 path from ...`
 
-## Init `dvc` for your project
+Once the `.csv.dvc` file is updated, you can check the status again:
+
+```
+dvc status
+```
+And pull the data version before deleting:
+```
+dvc pull
+```
+
+Open `stories-sample.csv` and check! You will notice that it has been restored to number of lines before deleting.
+
+Once you have been satisfied with this version of data, REMEMBER to commit the changes in `.csv.dvc` files:
+
+```
+git status
+```
+
+You will see `dvc-data/stories-sample.csv.dvc` has been modified and committed (as we checkout the older version before deleting mistake). Commit it:
+
+```
+git commit -m "fix: revert to the data version before deleting"
+```
+
+
+### 4 - Add/update data
+
+1. Now, let's change any dataset or add a new dataset. To update new changes to `dvc`:
+
+```
+dvc add /path/to/data/file.csv
+```
+Notice that new files would be created/modified, you would need to `git add .`, unless you choose `auto-staging` before.
+```
+dvc config core.autostage true
+```
+2. REMEMBER that `dvc` only generate new metafiles, it does not version control. You need to `git commit` changes:
+```
+git commit -m "<YOUR-MESSAGE>"
+
+# Can add tag to make it easy to refer back
+git tag -a "data.v.20220727" -m "message here"
+```
+3. Now, we are ready to push new changed data to remote storage
+```
+dvc push
+```
+
+# Extra
+> There is OUT OF SCOPE of this assignment, but you can try
+
+## Init `dvc` repo
+
+In case, you want to create a new git repo with `dvc`:
+```bash
+dvc init
+```
+Add the remote storage (could be s3, gs, Azure, Google Drive, or even local):
+```bash
+dvc remote add -d storage s3://<bucket>/<key>/
+```
+
+## Reuse data across repo
+
+The benefit also comes from the fact that we could reuse and share the data files across the repo for different projects
+
+1. Go to personal settings of Bitbucket, get App Password. Copy the Password (Token)
+![](./images/git-app-pass.png)
+
+2. Set credentials
+```
+export GIT_USERNAME=""
+export GIT_TOKEN=""
+```
+
+3. Create a new folder in your laptop, and run this:
+> Remember that you should have `dvc` and `dvc-gs` on the environment
+```
+dvc get --rev <tag|branch|commit-id> \
+	-v https://${GIT_USERNAME}:${GIT_TOKEN}@bitbucket.org/maianhdang/analytics-training-samples.git \
+	dvc-data/stories-sample.csv
+```
+Voila! Now, the datasets should be available on the directory that you are working.
+
+4. To list all dvc data in a repo, run this:
+```
+dvc list -R --rev <tag|branch|commit-id> --dvc-only https://${GIT_USERNAME}:${GIT_TOKEN}@bitbucket.org/maianhdang/analytics-training-samples.git
+```
