@@ -2,7 +2,8 @@
 
 This is the content of tutorials and notebooks/code samples for analytics-training-hub:
 
-- [Session 1: Lean Analytics - BigQuery & notebooks](./bigquery-notebooks/README.md): `2022-09-02`
+- [Session 1: Lean Analytics - BigQuery & notebooks](./bigquery-notebooks/README.md): `2022-08-31`
+- [Session 2: Reproducibility - `dvc` & `elyra`](./02-reproducibility/README.md): `2022-09-16`
 
 ### Git ###
 
