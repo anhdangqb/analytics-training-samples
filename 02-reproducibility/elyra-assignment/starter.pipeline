@@ -1,0 +1,252 @@
+{
+  "doc_type": "pipeline",
+  "version": "3.0",
+  "json_schema": "http://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "id": "elyra-auto-generated-pipeline",
+  "primary_pipeline": "primary",
+  "pipelines": [
+    {
+      "id": "primary",
+      "nodes": [
+        {
+          "id": "b7a4c334-c394-4ddb-8813-ea7e6ddcfd04",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "component_parameters": {
+              "filename": "stories_load_data.ipynb",
+              "runtime_image": "amancevice/pandas:1.4.1",
+              "outputs": [
+                "data/01_raw/full_201510_sample.csv"
+              ],
+              "env_vars": [
+                "DATASET=hacker_news",
+                "PROJECT_ID=soy-storm-359817",
+                "OUTPUT_PATH=data/01_raw/full_201510_sample.csv"
+              ],
+              "kubernetes_secrets": [],
+              "kubernetes_tolerations": [],
+              "kubernetes_pod_annotations": [],
+              "dependencies": [
+                "bigquery_load_data.py",
+                "../../credentials/demo-credentials.json"
+              ],
+              "include_subdirectories": false,
+              "mounted_volumes": []
+            },
+            "label": "load_data",
+            "ui_data": {
+              "label": "load_data",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 277,
+              "y_pos": 348,
+              "description": "Run notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              }
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "59a54cf3-b10a-4904-9e03-2583faea5d9a",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "component_parameters": {
+              "filename": "process_data.ipynb",
+              "outputs": [
+                "data/03_reporting/before_msno_matrix.png",
+                "data/03_reporting/atfer_msno_matrix.png",
+                "data/02_primary/cleaned_stories.csv"
+              ],
+              "env_vars": [
+                "INPUT_PATH=data/01_raw/full_201510_sample.csv",
+                "OUTPUT_PATH_1=data/03_reporting/before_msno_matrix.png",
+                "OUTPUT_PATH_2=data/03_reporting/atfer_msno_matrix.png",
+                "OUTPUT_PATH_3=data/02_primary/cleaned_stories.csv"
+              ],
+              "kubernetes_secrets": [],
+              "kubernetes_tolerations": [],
+              "kubernetes_pod_annotations": [],
+              "dependencies": [],
+              "include_subdirectories": false,
+              "mounted_volumes": [],
+              "runtime_image": "amancevice/pandas:1.4.1"
+            },
+            "label": "process_data",
+            "ui_data": {
+              "label": "process_data",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 526,
+              "y_pos": 307,
+              "description": "Run notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "5df01d7e-2fb5-43b9-988c-d1e2273b2a23",
+                  "node_id_ref": "b7a4c334-c394-4ddb-8813-ea7e6ddcfd04",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "88fe2ac7-62f9-4556-820d-8aa95e138495",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "component_parameters": {
+              "filename": "stories_analysis.ipynb",
+              "runtime_image": "amancevice/pandas:1.4.1",
+              "outputs": [],
+              "env_vars": [
+                "INPUT_PATH=data/02_primary/cleaned_stories.csv"
+              ],
+              "kubernetes_secrets": [],
+              "kubernetes_tolerations": [],
+              "kubernetes_pod_annotations": [],
+              "dependencies": [],
+              "include_subdirectories": false,
+              "mounted_volumes": []
+            },
+            "label": "stories_analysis",
+            "ui_data": {
+              "label": "stories_analysis",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 720,
+              "y_pos": 223,
+              "description": "Run notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "df6b6c39-994d-48a2-ba28-4d6b12027ff6",
+                  "node_id_ref": "59a54cf3-b10a-4904-9e03-2583faea5d9a",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "app_data": {
+        "ui_data": {
+          "comments": [
+            {
+              "id": "e8caab72-022e-44bd-9afc-9ab6bf1dc1cb",
+              "x_pos": 196,
+              "y_pos": 242,
+              "width": 175,
+              "height": 58,
+              "content": "Download full_201510 data from BQ (take 1% sample)",
+              "associated_id_refs": [
+                {
+                  "node_ref": "b7a4c334-c394-4ddb-8813-ea7e6ddcfd04"
+                }
+              ]
+            },
+            {
+              "id": "ef842f94-94b7-4550-b323-1df578ef8e6b",
+              "x_pos": 490,
+              "y_pos": 452,
+              "width": 175,
+              "height": 58,
+              "content": "Clean data. Filter only stories with not-null title",
+              "associated_id_refs": [
+                {
+                  "node_ref": "59a54cf3-b10a-4904-9e03-2583faea5d9a"
+                }
+              ]
+            }
+          ]
+        },
+        "version": 7,
+        "properties": {
+          "name": "starter",
+          "runtime": "Generic"
+        }
+      },
+      "runtime_ref": ""
+    }
+  ],
+  "schemas": []
+}

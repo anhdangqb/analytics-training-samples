@@ -1,0 +1,4 @@
+outs:
+- md5: cc767fa2d16032edc8dc117ec2a0ea09
+  size: 703
+  path: stories-sample.csv
