@@ -21,6 +21,10 @@ This assignment will focus on the next component of *"Best practices"*: **Reprod
 ## Discussions ##
 > This is sharing. You DO NOT need to prepare anything in advance. Just share the current way you work.
 
+1. Have you ever been stuck with a hand-over repo from someone else with multiple data files (you have no clue, which one to use), and multiple notebooks (you have no clue, which one to run first)?
+2. Have you ever handed over the same repo as (1) to someone else?
+3. How to improve the data tracking/sharing (that we know which version to use, and timely update the lastest version)?
+4. How to explain others how to run your series of notebooks?
 
 ## References ##
 * [dvc - Data and Model Versioning](https://dvc.org/doc/use-cases/versioning-data-and-model-files/tutorial)
