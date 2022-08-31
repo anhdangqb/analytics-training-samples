@@ -5,11 +5,15 @@
 - [bigquery-colab.ipynb](./biquery-colab.ipynb)
 - [bigquery-ingest-data.ipynb](./bigquery-ingest-data.ipynb)
 
+## Solution
+
+- [01-bigquery-schema.ipynb](./01-bigquery-schema.ipynb)
+
 ## Discussions ##
 > This is sharing. You DO NOT need to prepare anything in advance. Just share the current way you work.
 
 ### Framework ###
-1. When you receive new datasets, what steps do you do to investigate thed ata
+1. When you receive new datasets, what steps do you do to investigate the data?
 2. What are key metrics that you work with everyday? Why do we should care (engineer, measure, monitor, analyze) those metrics?
 3. How do you memorize and systemize the metrics you work with?
 4. Do you know any framework to design metrics for apps, business process, products?
@@ -27,8 +31,6 @@
     - How to use it together with other tools? (Python)
 2. Why do we ever need Python? What should be done with SQL, what should be done with Python?
 3. Have you ever heard about Jupyter Notebooks? What is the advantages of using notebooks? And, disadvantages?
-
-
 
 
 ## References ##
