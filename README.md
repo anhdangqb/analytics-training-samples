@@ -23,6 +23,14 @@ or, better, replay your local work on top of the fetched branch, like a "git pul
 ```
 git rebase upstream/main
 ```
+### Contribution ### 
+If you want to contribute any changes:
+1. Make a new branch for changes (don't change directly on `main`). Naming convention: 
+    - `feat/<name>` for new features (Commit message: "feat: <message>")
+    - `fix/<name>` for hotfix (Commit message: "fix: <message>")
+    - `chore/<name>` for chore tasks - typos, small modifications, refactors (Commit message: "chore: <message>")
+2. Commit and push changes to your forked repo
+3. Create pull request to upstream repo
 
 
 ### How do I get set up? ###
