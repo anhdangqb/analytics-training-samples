@@ -25,7 +25,7 @@ git rebase upstream/main
 ```
 Or, you can use the fork sync in Bitbucket UI (Docs: [Sync your fork](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/))
 
-### Contribution ### 
+### Contribution ###
 > Source: Basic workflow [Bitbucket fork a repo](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/)
 
 If you want to contribute any changes to the original repo:
