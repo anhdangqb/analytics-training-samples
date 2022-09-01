@@ -28,8 +28,7 @@
               "kubernetes_tolerations": [],
               "kubernetes_pod_annotations": [],
               "dependencies": [
-                "bigquery_load_data.py",
-                "../../credentials/demo-credentials.json"
+                "bigquery_load_data.py"
               ],
               "include_subdirectories": false,
               "mounted_volumes": []
