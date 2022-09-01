@@ -1,5 +1,7 @@
 # README #
 
+[<img src="https://deepnote.com/buttons/launch-in-deepnote.svg">](https://deepnote.com/launch?url=https://github.com/anhdangqb/analytics-training-samples)
+
 This is the content of tutorials and notebooks/code samples for analytics-training-hub:
 
 - [Session 1: Lean Analytics - BigQuery & notebooks](./bigquery-notebooks/README.md): `2022-08-31`
