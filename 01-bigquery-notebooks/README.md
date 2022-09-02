@@ -1,15 +1,15 @@
 # Lean Analytics: BigQuery & Notebooks #
 
-## Assignments
+## 🚩 Assignments
 
 - [bigquery-colab.ipynb](./biquery-colab.ipynb)
 - [bigquery-ingest-data.ipynb](./bigquery-ingest-data.ipynb)
 
-## Solution
+## 🍰 Solution
 
 - [01-bigquery-schema.ipynb](./01-bigquery-schema.ipynb)
 
-## Discussions ##
+## 💡 Discussions ##
 > This is sharing. You DO NOT need to prepare anything in advance. Just share the current way you work.
 
 ### Framework ###
@@ -33,6 +33,6 @@
 3. Have you ever heard about Jupyter Notebooks? What is the advantages of using notebooks? And, disadvantages?
 
 
-## References ##
+## 📝 References ##
 * [Alistra Croll, Benjamin Yoskovitz (2013). Lean Analytics: Use Data to Build a Better Startup Faster](https://www.goodreads.com/vi/book/show/16033602-lean-analytics). Chapter 2, 4, 5.
 * [Lean Analytics - Readings & Code samples](https://publish.obsidian.md/danghuynhmaianh/00-Work/Lean-Analytics/Tutorials/5-Analytics+Frameworks) - Pass: `danghuynhmaianh`
