@@ -26,6 +26,14 @@ or, better, replay your local work on top of the fetched branch, like a "git pul
 git rebase upstream/main
 ```
 Or, you can use the fork sync in Bitbucket UI (Docs: [Sync your fork](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/))
+4. Tag convention: `ass.v1.0.0`: type.major.minor.patch 
+    - type: `ass` (assignment), `sol` (solution), `data` (data)
+    - major: breaking changes 
+    - minor: new features
+    - patch: bug fixes
+
+```
+```
 
 ### Contribution ###
 > Source: Basic workflow [Bitbucket fork a repo](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/)
