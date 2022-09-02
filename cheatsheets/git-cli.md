@@ -57,3 +57,45 @@ git rebase origin/<target>
 ```
 git rebase --continue
 ```
+
+### Fork repository ###
+Pull/push from upstream repo (Forked)
+```
+cd LOCAL_REPO
+git remote add upstream https://maianhdang@bitbucket.org/maianhdang/analytics-training-samples.git
+```
+then: (like "git pull" which is fetch + merge)
+```
+git fetch upstream
+git merge upstream/main main
+```
+or, better, replay your local work on top of the fetched branch, like a "git pull --rebase"
+```
+git rebase upstream/main
+```
+Or, you can use the fork sync in Bitbucket UI (Docs: [Sync your fork](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/))
+
+### Tag/Checkout versions ###
+Tag convention: `ass.v1.0.0`: type.major.minor.patch 
+
+- type: `ass` (assignment), `sol` (solution), `data` (data)
+- major: breaking changes 
+- minor: new features
+- patch: bug fixes
+
+Check if the local has all updated tags
+```
+ git fetch --all --tags --prune
+```
+Check all existing tags
+```
+git tag --list
+```
+Search by pattern (for example, assignment 1 version)
+```
+git tag --list 'ass.v1*' 
+```
+If you want to revert to a old version (for example, want to solve the assignment without seeing the solution)
+```
+git checkout tags/ass.v1.0.1 -b ass-1
+```

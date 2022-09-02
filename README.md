@@ -10,46 +10,24 @@ Notebooks and code samples for analytics flipped-learning tutorials. This codifi
 ### Git ###
 
 1. Fork this repository to your personal Bitbucket workspace ("Fork" = producing a personal copy of someone else's project) 
-2. Work and colab with Git. See: [Git-CLI Cheatsheets](./cheatsheets/git-cli.md)
-3. Pull/push from upstream repo (Forked)
-```
-cd LOCAL_REPO
-git remote add upstream https://maianhdang@bitbucket.org/maianhdang/analytics-training-samples.git
-```
-then: (like "git pull" which is fetch + merge)
-```
-git fetch upstream
-git merge upstream/main main
-```
-or, better, replay your local work on top of the fetched branch, like a "git pull --rebase"
-```
-git rebase upstream/main
-```
-Or, you can use the fork sync in Bitbucket UI (Docs: [Sync your fork](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/))
-4. Tag convention: `ass.v1.0.0`: type.major.minor.patch 
-    - type: `ass` (assignment), `sol` (solution), `data` (data)
-    - major: breaking changes 
-    - minor: new features
-    - patch: bug fixes
+2. Work and colab with Git. See: [Git-CLI Cheatsheets](./cheatsheets/git-cli.md). Related topics that you would need to use:
+
+    - Work with fork repository
+    - Checkout by tags versions of assignments/solutions 
 
 ```
+git checkout tags/ass.v1.0.1 -b ass-1
 ```
+
 
 ### Contribution ###
-> Source: Basic workflow [Bitbucket fork a repo](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/)
 
-If you want to contribute any changes to the original repo:
-1. Create a new branch and change on local machine. Naming convention: 
-    - `feat/<name>` for new features (Commit message: "feat: <message>")
-    - `fix/<name>` for hotfix (Commit message: `"fix: <message>"`)
-    - `chore/<name>` for chore tasks - typos, small modifications, refactors (Commit message: `"chore: <message>"`)
-2. Commit changes
-2. Push changes to your remote fork repo
-3. Create pull request to original (upstream) repo
+If you find any issue/problem, when working with the repo, please raise the issue. 
 
-![](./images/fork-pull-request.png)
+Even better, you can fix/modify/add (typos, better rephrase of the docs, better solutions, etc.) from your fork repository and contribute back to the original repo.
 
-Afterwards, the last step: Repo owner will review and merge the pull request.
+> See: [CONTRIBUTION.md](./CONTRIBUTION.md)
+
 
 ### How do I get set up? ###
 
