@@ -6,7 +6,7 @@ Notebooks and code samples for analytics flipped-learning tutorials. This codifi
 
 ### 🚩 Contents ###
 
-- [Session 1: Lean Analytics - BigQuery & notebooks](./bigquery-notebooks/README.md): `2022-08-31`
+- [Session 1: Lean Analytics - BigQuery & notebooks](./01-bigquery-notebooks/README.md): `2022-08-31`
 - [Session 2: Reproducibility - `dvc` & `elyra`](./02-reproducibility/README.md): `2022-09-16`
 
 ### 💡 How to use this repo ###
