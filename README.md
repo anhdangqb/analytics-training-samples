@@ -1,6 +1,8 @@
 # README #
 
-This is the content of tutorials and notebooks/code samples for analytics-training-hub:
+[<img src="https://deepnote.com/buttons/launch-in-deepnote.svg">](https://deepnote.com/launch?url=https://github.com/anhdangqb/analytics-training-samples)
+
+Notebooks and code samples for analytics flipped-learning tutorials. This codified my enthusiasm for continuous learning, exploring, and refining my mindset, skillet, toolset as a data practitioner:
 
 - [Session 1: Lean Analytics - BigQuery & notebooks](./bigquery-notebooks/README.md): `2022-08-31`
 - [Session 2: Reproducibility - `dvc` & `elyra`](./02-reproducibility/README.md): `2022-09-16`
@@ -89,6 +91,8 @@ The loop repeats!
 
 
 ### Materials ###
+- [DATAcracy](https://anhdang.gitbook.io/datacracy/)
+- [DATAcracy - ATOM class repo](https://github.com/anhdanggit/atom-assignments)
 - [Lean Analytics - Readings and code samples](https://publish.obsidian.md/danghuynhmaianh/00-Work/Lean-Analytics/Tutorials/5-Analytics+Frameworks) - Pass: `danghuynhmaianh`
 - If you are not familiar with Python, please take these (by orders):
     - [Kaggle Python](https://www.kaggle.com/learn/python)
