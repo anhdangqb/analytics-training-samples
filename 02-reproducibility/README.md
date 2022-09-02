@@ -15,8 +15,8 @@ This assignment will focus on the next component of *"Best practices"*: **Reprod
 
 ## Assignments ##
 
-- [dvc-tutorial](./dvc-assignment.md)
-- [elyra-tutorial](elyra-assignment/elyra-assignment.md)
+- [dvc-assignment](./dvc-assignment.md)
+- [elyra-assignment](elyra-assignment/elyra-assignment.md)
 
 ## Discussions ##
 > This is sharing. You DO NOT need to prepare anything in advance. Just share the current way you work.

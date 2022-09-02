@@ -4,10 +4,38 @@
 
 Notebooks and code samples for analytics flipped-learning tutorials. This codified my enthusiasm for continuous learning, exploring, and refining my mindset, skillet, toolset as a data practitioner:
 
+### 🚩 Contents ###
+
 - [Session 1: Lean Analytics - BigQuery & notebooks](./bigquery-notebooks/README.md): `2022-08-31`
 - [Session 2: Reproducibility - `dvc` & `elyra`](./02-reproducibility/README.md): `2022-09-16`
 
-### Git ###
+### 💡 How to use this repo ###
+
+This repo is a collection of notebooks and code samples for analytics flipped-learning tutorials. The contents are organized by session, I recommend to take them in the numbering orders, because the latter will be related and most of the times reusing the output of previous session. 
+
+You can [Fork the repo](#fork-and-fit), follow instructions in [How to set up?](#how-to-set-up).
+
+Then, you are ready!
+
+For each session:
+
+1. Read the README.md files: give the context, and links to assignment and solutions
+2. Highly recommend to work on the assignment by yourself first (the guidance is given along the way to help you solve it)
+    - Tag for each assignment: `ass.v<major>.<minor>.<fix>` 
+    - Tag for each solution: `sol.v<major>.<minor>.<fix>`
+    - You can checkout by tags and work from any checkpoint. See [Git-CLI Cheatsheets](./cheatsheets/git-cli.md)
+3. Then, you can refer to the solutions (this is only to give you a common frame of reference)
+    - It's important to just read the code (and understand)
+    - Run line by line and see the output
+    - Understand the structure of code as a whole
+4. Continue to work on the frame of solutions
+    - Modify, add more complexity, customize it your own way
+    - Optimize or fix any issue/typos
+    - If you want, contribute your work to this repo. See: [CONTRIBUTION](#contribution)
+
+
+
+### 🚧 Fork and Git ###
 
 1. Fork this repository to your personal Bitbucket workspace ("Fork" = producing a personal copy of someone else's project) 
 2. Work and colab with Git. See: [Git-CLI Cheatsheets](./cheatsheets/git-cli.md). Related topics that you would need to use:
@@ -20,7 +48,7 @@ git checkout tags/ass.v1.0.1 -b ass-1
 ```
 
 
-### Contribution ###
+### 📥 Contribution ###
 
 If you find any issue/problem, when working with the repo, please raise the issue. 
 
@@ -29,9 +57,9 @@ Even better, you can fix/modify/add (typos, better rephrase of the docs, better 
 > See: [CONTRIBUTION.md](./CONTRIBUTION.md)
 
 
-### How do I get set up? ###
+### 📦 How to set up? ###
 
-1. Install Anaconda
+1. Install Anaconda (or miniconda)
 2. Have an IDE (i.e. VSCode)
 3. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 4. Make sure you have the [GCP service account](https://cloud.google.com/iam/docs/service-accounts) **credential json key** to programmatically access BigQuery (Ask your Admin). Put it on `credentials/`
@@ -39,7 +67,7 @@ Even better, you can fix/modify/add (typos, better rephrase of the docs, better 
 3. Create Conda environments. See: [Conda-CLI Cheatsheets](./cheatsheets/conda-cli.md)
 
 ```
-conda create python=3.8 --name analytics-training-samples
+conda create python=3.x --name analytics-training-samples
 conda activate !$
 ```
 
@@ -50,7 +78,7 @@ pip install -r requirements.txt
 ```
 
 
-### Flipped learning ###
+### 🍰 Flipped learning ###
 
 > To maximize the gain of our time and customize the experience for learners from diversed backgrounds, we will practice **"Flipped Learning"** 
 
@@ -70,13 +98,13 @@ pip install -r requirements.txt
 The loop repeats!
 
 
-### Rules ###
+### 🚨 Rules ###
 * You owns your progress, experience, and the outcomes 
 * **Rewards**: NO. You learn for your skills and knowledge
 * **Punishments**: NO. You learn for your skills and knowledge
 
 
-### Materials ###
+### 📝 Materials ###
 - [DATAcracy](https://anhdang.gitbook.io/datacracy/)
 - [DATAcracy - ATOM class repo](https://github.com/anhdanggit/atom-assignments)
 - [Lean Analytics - Readings and code samples](https://publish.obsidian.md/danghuynhmaianh/00-Work/Lean-Analytics/Tutorials/5-Analytics+Frameworks) - Pass: `danghuynhmaianh`
